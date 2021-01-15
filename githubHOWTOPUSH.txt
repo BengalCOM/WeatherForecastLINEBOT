@@ -1,0 +1,21 @@
+git add [ファイル名] //追加
+git commit -a -m "任意のコメント"  //コミット (-aオプションは変更を自動検出してくれる)
+git push origin master  //masterを更新
+
+ーーーーーーーーーーーーーーーーーーーーーー
+How to Example（usually）
+git add . //すべてのファイル・ディレクトリ
+git commit -a -m "任意のコメント"  //コミット (-aオプションは変更を自動検出してくれる)
+git push origin master  //masterを更新(GitHubへPush)
+
+
+--------------------------------------------
+git reset --soft HEAD~2 // 最新のコミットから2件分をワークディレクトリの内容を保持し取り消す
+git reset --hard HEAD~2 // 最新のコミットから2件分のワークディレクトリの内容とコミットを取り消す
+
+git log //コミットのログが見れる
+git reflog //いろいろ見れる
+git reflog origin/branch_name //pushのログが見れる
+
+
+詳細: https://qiita.com/konweb/items/621722f67fdd8f86a017
